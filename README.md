@@ -26,6 +26,8 @@ The drawbacks:
 - Risk of reduced availability - The more services you're connected to, the more likely one can take you down
 - Lack of transactional data consistency
 
+## 7.2 Using the CQRS pattern
+
 Complex queries (like orders no older than X containing the word Y) would require the API composition pattern to grab a lot of extra data from other services and then join it in memory (non performant).
 
 `findAvailableRestaurants` is a good example. It might seem to make sense that the `RestaurantService` owns this because they have the data, but it's really a much more complex thing that has a different main concern.
@@ -40,7 +42,6 @@ Query side: get
 
 The get data stays in sync from events published
 
-_add screenshot_
 ![Non-CQRS v CQRS](https://i.imgur.com/ZI1mODa.png)
 
 Separate DBs used
