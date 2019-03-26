@@ -9,8 +9,7 @@ Tldr; writing queries for multiple services is hard! You got 2 options.
 
 ## 7.1 Querying using the API composition pattern
 
-_add screenshot_
-![Screen Shot 2019-03-23 at 2.15.06 PM.png](:storage/87d2f2b6-134a-422e-b14e-680a3efc29f9/dfc2f3bb.png)
+![API Composition](https://i.imgur.com/NV9hOyi.png)
 
 There is an API composer that is in charge of making the requests to each service.
 
@@ -42,7 +41,7 @@ Query side: get
 The get data stays in sync from events published
 
 _add screenshot_
-![Screen Shot 2019-03-24 at 7.38.56 PM.png](:storage/87d2f2b6-134a-422e-b14e-680a3efc29f9/30c2183c.png)
+![Non-CQRS v CQRS](https://i.imgur.com/ZI1mODa.png)
 
 Separate DBs used
 
@@ -66,8 +65,7 @@ pg. 236
 
 Choosing a DB is all about the view that you want to be able to create.
 
-_add screenshot_
-![Screen Shot 2019-03-24 at 7.59.17 PM.png](:storage/87d2f2b6-134a-422e-b14e-680a3efc29f9/a22bed48.png)
+![Selecting a db table](https://i.imgur.com/FbFPpVC.png)
 
 Table for deciding what type of DB you'd like to use.
 
